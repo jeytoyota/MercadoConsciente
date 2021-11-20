@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+<h1 th:text="#{h1.mercadoconsciente}"></h1>
+
+	<h2 class="title-donate" th:text="#{receptor.new}"></h2>
+	<div class="container">
+	<div class="box">
+	
+	<form class="form" th:action="@{/receptor}" method="post" th:object="${receptor}">
+	
+		<label for="cnpj" th:text="#{doador.cnpj}"></label>
+		<input type="text" name="cnpj" id="cnpj">
+		<span th:errors="*{cnpj}"></span>
+		
+		<label for="razao" th:text="#{doador.razao}"></label>
+		<input type="text" name="razao" id="razao">
+		<span th:errors="*{razao}"></span>
+		
+		<label for="logradouro" th:text="#{doador.logradouro}"></label>
+		<input type="text" name="logradouro" id="logradouro">
+		<span th:errors="*{logradouro}"></span>
+		
+		<label for="telefone" th:text="#{doador.telefone}"></label>
+		<input type="text" name="telefone" id="telefone">
+		<span th:errors="*{telefone}"></span>
+		
+		<label for="email" th:text="#{doador.email}"></label>
+		<input type="text" name="email" id="email">
+		<span th:errors="*{email}"></span>
+		
+		<label for="senha" th:text="#{doador.senha}"></label>
+		<input type="password" name="senha" id="senha">
+		<span th:errors="*{senha}"></span>
+		
+		<input type="hidden" id="admin" name="admin" value="normal">
+		
+		<a class="cancel" href="/" th:text="#{button.cancel}"></a>
+			<button th:text="#{button.save}"></button>
+		
+	</form>
+	</div>
+	<div>
+	 <img class="img-donate" alt="" th:src="@{~/image/acelga.jpg}">
+	</div>
+	</div>
+	
+</body>
+</html>

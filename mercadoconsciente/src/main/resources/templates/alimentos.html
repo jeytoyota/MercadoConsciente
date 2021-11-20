@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+<header th:include="_template :: header"></header>
+
+	<h2 th:text="#{h2.alimentos}"></h2>
+
+<div class="banner-alimentos">
+	<form class="form" th:action="@{/alimentos}" method="post">
+	
+		<label th:text="#{alimento.nome}" for="nome"></label>
+		<input type="text" name="nome" id="nome">
+		
+		<label th:text="#{alimento.quantidade}" for="quantidade"></label>
+		<input type="number" name="quantidade" id="quantidade" step=".01">
+		
+		<input type="hidden" name="doador" id="doador" th:value="${idDoador}">
+		
+<!-- 		<a  href="/alimento">Cancelar</a> -->
+		<button th:text="#{button.add}"></button>
+		
+	</form>
+	</div>
+	<h2>Alimentos Cadastrados</h2>
+	<div class="box-info">
+	<ul th:each="alimento: ${alimentos}">
+		<li>
+			<p th:text="${alimento.nome}">
+			<p th:text="${alimento.quantidade}">
+		</li>	
+	</ul>
+	</div>
+	<a th:text="#{button.voltar}" href="/doador"></a>
+</body>
+</html>

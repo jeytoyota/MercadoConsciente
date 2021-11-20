@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+<header th:include="_template :: header"></header>
+
+<div class="box-info2">
+	<h2 th:text="#{h2.doadores}"></h2>
+	
+	<a 	th:if="${#authentication.getPrincipal().getAdmin == 'admin'}" 
+		th:href="${'/alimentos/' + #authentication.getPrincipal().getId}" 
+		th:text="#{h2.alimentos}"></a>
+	
+	<ul th:each="doador: ${doadores}">
+		<li>
+			<a th:href="${'/doador/info/' + doador.id}" th:text="${doador.razao}"></a>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.banner-alimentos{
+	background-image: url(/image/morango.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height : 600px;
+	display : flex;
+	width : 100%;
+	justify-content: end;
+	align-items : center;
+}
+
+.box-info{
+	display:flex;
+	justify-content : center;
+	align-items : center;
+	
+	background-color : #556B2F;
+}
+.box-info2{
+	display:flex;
+	justify-content : center;
+	align-items : center;
+	flex-direction : column;
+	background-color : #556B2F;
+	border-radius: 10px;
+	margin-right : 10em;
+	margin-left : 10em;
+}
+

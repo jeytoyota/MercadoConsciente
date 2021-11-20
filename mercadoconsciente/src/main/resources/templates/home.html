@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+
+	
+	<div class="menu">
+		<a href="/login" th:text="#{login}"></a>
+		<a href="/doador/new" th:text="#{doador.new}"></a>
+		<a href="/receptor/new" th:text="#{receptor.new}"></a>
+	</div>
+	
+	<div class="banner">
+         <img class="img" alt="" th:src="@{~/image/supermercado.jpg}">
+    </div>
+    <div class="text">
+    <h1>Mercado Conciente</h1>
+         <p>Todos os anos, milhares de pessoas ao redor do mundo, não tem ao menos uma refeição diária. Segundo dados da ONU, 16 países convivem com problemas graves de alimentação, entre os quais oito enfrentam alguma crise ou emergências que afetam um quarto ou mais da população. O caso mais preocupante é o do Iêmen, onde 60% dos habitantes (17 milhões de pessoas) sofrem com fome severa, seguido do Sudão do Sul, com 45% da população (4,8 milhões de pessoas) em situação semelhante. 
+         </p>
+         <p>Em contrapartida, a quantidade de alimentos desperdiçados somente no Brasil é de 23,6 milhões de toneladas de alimentos por ano, o que representa mais de 40 quilos de lixo por pessoa ao ano, segundo a Associação Brasileira de Supermercados, em 2019. Deficiências gerenciais representam grande causa deste desperdício de alimentos nos países em desenvolvimento, especialmente nas fases de colheita e pós-colheita. Em tais casos, simples inovações de baixo custo podem fazer grande diferença. Outro ponto a salientar é que evitar essas perdas e desperdícios também é benéfico  para os ecossistemas da terra, além de reduzir a produção e o consumo de alimentos, reduzindo assim os gastos frenéticos de recursos naturais e danos na biodiversidade. 
+         </p>
+         <p>
+         Todavia, o desperdício de alimentos pode ser mais complexo para resolver, uma vez que também requer mudanças na forma como valorizamos e consumimos os alimentos. Os nossos padrões de consumo atuais não são sustentáveis. Sendo assim, a consciência do consumidor é um passo fundamental para melhorar nossas habilidades em planejamento alimentar, compra e consumo.
+Portanto, combater as perdas e os desperdícios é, em princípio, muito mais eficiente do que expandir a produção de alimentos. 
+         
+         </p>
+         <p>Visando sanar essas problemáticas, o Mercado Consciente, tem como objetivo, interligar doador e receptor, captando e gerenciando as doações de alimentos para proporcionar ao maior número de pessoas em situação vulnerável, uma alimentação digna e saudável. Além disso, também visa proporcionar aos doadores desses alimentos, a oportunidade de um ato de solidariedade, com a facilidade no gerenciamento desses alimentos, e assim, realizando a  conexão entre ambas as partes, trazendo esperança para o máximo possível de pessoas que vivem diariamente com a insegurança alimentar. Os alimentos doados são aqueles que estão fora do padrão de venda, ou seja, geralmente estão muito maduros ou levemente danificados e normalmente seriam descartados, mesmo estando aptos para o consumo humano. 
+         </p>
+    </div>
+    <div class="footer">
+    	<p>Copyright EagleEye</p>
+    </div>
+    
+</body>
+</html>

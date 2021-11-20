@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+
+	<div th:if="${param.error}" class="alert error">Login inválido</div>
+
+	<h1 th:text="#{login}"></h1>
+	<div class="banner-login">
+		<div class="box-form">
+		
+		<form class="form" th:action="@{/login}" method="post">
+		
+			<label for="email" th:text="#{doador.email}"></label>
+			<input type="text" name="username" id="email">
+			
+			<label for="senha" th:text="#{doador.senha}"></label>
+			<input type="password" name="password" id="senha" step="">
+			
+			<a class="cancel2" href="/" th:text="#{button.cancel}"></a>
+			<button th:text="#{button.enter}"></button>
+			
+			
+		</form>
+		</div>
+	</div>
+	
+</body>
+</html>

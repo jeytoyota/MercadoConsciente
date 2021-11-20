@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:sec="http://thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head th:fragment="head">
+	<meta charset="UTF-8">
+	<title th:text="#{h1.mercadoconsciente}"></title>
+	<link rel="stylesheet" type="text/css" th:href="@{~/css/global.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{~/css/home.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{~/css/form.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{~/css/alimentos.css}">
+</head>
+<body>
+
+<header th:fragment="header">
+	<h1>
+		<a class="title-link" href="/" th:text="#{h1.mercadoconsciente}"></a>
+	</h1>
+	
+	<div class="">
+		<a href="/logout" title="sair">
+			<span th:text="#{logout}"></span>
+		</a>
+	</div>
+</header>
+
+
+
+</body>
+</html>

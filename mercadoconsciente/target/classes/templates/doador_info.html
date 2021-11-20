@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:include="_template :: head"></head>
+<body>
+<header th:include="_template :: header"></header>
+
+<div class="box-info2">
+<h2 th:text="${doador.razao}"></h2>
+
+	<div>
+			<ul th:each="alimento: ${alimentos}">
+				<li>
+					<p th:text="${alimento.nome}">
+					<p th:text="${alimento.quantidade}">
+				</li>
+			</ul>
+		
+		<p th:text="#{doador.cnpj} +': '+ ${doador.cnpj}">
+		<p th:text="#{doador.logradouro} +': '+ ${doador.logradouro}">
+		<p th:text="#{doador.telefone} +': '+ ${doador.telefone}">
+		<p th:text="#{doador.email} +': '+ ${doador.email}">
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+.form {
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 2rem 5rem;
+	
+	border-radius: 20px;
+}
+
+.box{
+	display :table-cell;
+	float : left;
+	width : 50%;
+	background-color : #F4A460;
+}
+
+.img-donate{
+	margin-top:2em;
+	width : 45%;
+	
+	display: table-cell;
+	float : right;
+}
+
+.form label {
+	margin : 0.5em;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=password],
+.form input[type=number],
+.form textarea
+{
+	background: rgba(255, 255, 255, 0.8);
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-family: Quicksand;
+	font-size: 1.5rem;
+	color: var(--input-color);
+	padding-left: 1rem; 
+}
+
+.container {
+	display : table;
+}
+
+
+.form button{
+	margin : 1em;
+	background-color: #556B2F;
+	width : 50%;
+	height : 35px;
+	border-radius: 20px;
+	border : none;
+	color : white;
+}
+
+.title-donate{
+	
+	margin-left : 7em;
+}
+
+.banner-login{
+	background-image: url(/image/hands.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height : 600px;
+	display : flex;
+	width : 100%;
+	justify-content: end;
+	align-items : center;
+}
+
+.box-form{
+	
+	width : 50%;
+}
+
+.cancel {
+	color : #556B2F;
+	margin-top : 10px;
+	text-decoration:none;
+}
+
+.cancel2 {
+	color : white;
+	margin-top : 10px;
+	text-decoration:none;
+}
